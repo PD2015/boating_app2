@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-
-
+  
   devise_for :users, controllers: { registrations: "registrations" }
+  resources :boats, only: [:new, :create, :destroy] #update?
   root 'static_pages#home'
   get "user" => "users#show"
 
