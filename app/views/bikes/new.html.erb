@@ -4,7 +4,9 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@bike) do |f| %>
-    
+
+    	<%= f.label :Make %>
+    	<%= f.select :make, ['Kona', 'Raleigh', 'Orange', 'Brompton'] %>	
 
       <%= f.label :name %>
       <%= f.text_field :name, class: 'form-control' %>
