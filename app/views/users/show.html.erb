@@ -6,6 +6,20 @@
 
 		<%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-danger btn-lg") %> 
 
+		<!-- Single SEARCH button -->
+<div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Found someone else's kit? Search <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a><%= link_to "Search for a Boat", boats_path %></a></li>
+    <li><a><%= link_to "Search for a Bike", bikes_path %></a></li>
+    <li><a><%= link_to "Search for a Board", boats_path %></a></li> <!-- Adjust route -->
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Log a found item</a></li> <!-- add link? -->
+  </ul>
+</div>
+
 	</div>
 	
 <!-- New kit buttons toolbar -->
@@ -21,6 +35,7 @@
 	</div>
 </div>
 <!-- End New kit buttons toolbar -->
+
 <div class="container">
 	<div class="col-md-3">
 		<%= image_tag("27701327-silhouette-kayakers-kayak-copy.jpg", :alt => "kayaker") %>

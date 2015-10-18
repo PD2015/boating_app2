@@ -1,6 +1,10 @@
 class BoatsController < ApplicationController
 	before_filter :authenticate_user!
 
+	def index
+ 
+	end
+
 	def new
 		@boat = current_user.boats.new
 	end
@@ -25,6 +29,8 @@ class BoatsController < ApplicationController
     def boat_params
       params.require(:boat).permit(:name, :manufacturing_no)
     end
+
+    
  
 
 end

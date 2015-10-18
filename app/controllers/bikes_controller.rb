@@ -1,4 +1,8 @@
 class BikesController < ApplicationController
+	
+	def index
+	end
+
 	def new
 		@bike = current_user.bikes.new
 	end
