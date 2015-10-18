@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   	user_path(:id => resource.id) 
   end
 
- 
+
   
 end

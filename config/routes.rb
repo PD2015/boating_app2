@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations" }
   resources :boats, only: [:new, :create, :destroy] #update?
   root 'static_pages#home'
-  get "user" => "users#show"
+  #get "user" => "users#show"
+  match '/users/:id', :to => 'users#show',    :as => :user,  via: [:get, :post]
+  
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,4 +1,5 @@
 class BoatsController < ApplicationController
+	before_filter :authenticate_user!
 
 	def new
 		@boat = current_user.boats.new
@@ -8,7 +9,7 @@ class BoatsController < ApplicationController
 			@boat = current_user.boats.build(boat_params)
     if @boat.save
       flash[:success] = "New boat added!"
-      redirect_to user_path
+      redirect_to user_path(current_user)
     else
       render 'static_pages/home'
     end
@@ -22,7 +23,7 @@ class BoatsController < ApplicationController
 	private
 
     def boat_params
-      params.require[:boat].permit(:name, :manufacturing_no)
+      params.require(:boat).permit(:name, :manufacturing_no)
     end
  
 
