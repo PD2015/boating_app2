@@ -1,0 +1,22 @@
+<h1>Searches#new</h1>
+<p>Find me in app/views/searches/new.html.erb</p>
+
+<%= form_for @search, html: {class: "pure-form"} do |s| %>
+
+	<div class="field">
+		<%= s.label :make %>
+		<%= s.select :make, options_for_select(@make) %>
+	</div>
+
+	<div class="field">
+		<%= s.label :manufacturing_no %>
+		<%= s.text_field :manufacturing_no %>
+	</div>
+
+	<div class="actions">
+		<%= s.submit "Search", class: "pure-button pure-button-primary"%>
+	</div>
+
+<%end%>
+
+<%= link_to "Return to users page", user_path(current_user) %>
