@@ -1,0 +1,16 @@
+<h1>Searches#show</h1>
+<p>Find me in app/views/searches/show.html.erb</p>
+
+<% if @search.search_boats.empty? %>
+	<p> No records found </p>
+<% else %>
+<% @search.search_boats.each do |boat| %>
+	<br>
+	<div class=“div”>
+	<h1><%= boat.name %></h1>
+	<h1><%= boat.make %></h1>
+	<h1><%= boat.manufacturing_no %></h1>
+
+	<%end%>
+<%end%>
+any other info want displayed from that record.
