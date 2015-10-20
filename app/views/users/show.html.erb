@@ -49,12 +49,14 @@
 			<div class="table-responsive">
 				<table class="table">
 					<tr>
+						<th>Boat Make</th> 
 						<th>Boat Name</th> 
 						<th>Manufacturing No.</th> 
 					</tr>
 					<tbody></tbody>
 					<% if @user.boats.each do |boat|%>
 						<tr>
+							<td><%= boat.make %></td>
 							<td><%= boat.name %></td>
 							<td><%= boat.manufacturing_no %></td>
 						</tr>

@@ -6,7 +6,7 @@ class SearchesController < ApplicationController
 
   def create
   	@search = Search.create(search_params)
-  	redirec_to @search
+  	redirect_to @search
   end
 
   def show
@@ -17,6 +17,6 @@ class SearchesController < ApplicationController
   	private
 
   	def search_params
-  		params.require(:boat).permit(:make, :manufacturing_no)  		
+  		params.require(:search).permit(:make, :manufacturing_no)  		
   	end
 end

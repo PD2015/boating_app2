@@ -1,5 +1,4 @@
-<h1>Searches#show</h1>
-<p>Find me in app/views/searches/show.html.erb</p>
+<h1>Boat Search Results</h1>
 
 <% if @search.search_boats.empty? %>
 	<p> No records found </p>
@@ -7,10 +6,15 @@
 <% @search.search_boats.each do |boat| %>
 	<br>
 	<div class=“div”>
-	<h1><%= boat.name %></h1>
-	<h1><%= boat.make %></h1>
-	<h1><%= boat.manufacturing_no %></h1>
+	<h1>Boat Make:<%= " " + boat.make %></h1>
+	<h1> Boat Name:<%= " " + boat.name %></h1>
+	<h1>Boat Manufacturing Number:<%= " " + boat.manufacturing_no %></h1>
 
 	<%end%>
 <%end%>
-any other info want displayed from that record.
+
+<h2>Contact the Owner </h2>
+ <p>Owner details: </p>
+
+<%= link_to "Perform a new boat search", new_search_path %><br />
+<%= link_to "return to my users page", user_path(current_user)%>
