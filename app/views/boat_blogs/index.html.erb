@@ -1,13 +1,33 @@
-<h1>BoatBlogs#index</h1>
-<p>Find me in app/views/boat_blogs/index.html.erb</p>
+<h1>All of My Boat Blog Posts</h1>
 
-<%= link_to "Create a new blog post", new_user_boat_blog_path(current_user) %>
 
-<% if @user.boat_blogs.each do |b|%>
-						<tr>
-							<td><%= b.make %></td>
-							<td><%= b.name %></td>
-							<td><%= b.manufacturing_no %></td>
-						</tr>
-						<%end%>
-					<%end%>	
+<%= link_to "Create a new blog post", new_user_boat_blog_path(current_user) %><br/>
+<%= link_to "Return to users page", user_path(current_user) %>
+
+	<%-# commented : checking if @posts is empty -%>
+<% if @boat_blogs.empty? %> 
+  <span>Sorry, post is empty </span>
+<% else %>
+  <% @boat_blogs.each do |p| %>
+   <% if p.user_id == current_user.id %>
+   
+<p>
+  <strong>Location:</strong>
+   <%= p.location %>
+</p>
+<p>
+  <strong>Date:</strong>
+   <%= p.date %>
+</p>
+<p>
+  <strong>Post:</strong>
+   <%= p.post %>
+</p>
+<hr>
+    
+   <% end %>
+  <% end %>
+<% end %>
+
+
+ 

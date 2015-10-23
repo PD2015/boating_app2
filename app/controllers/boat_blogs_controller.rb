@@ -3,8 +3,10 @@ class BoatBlogsController < ApplicationController
 	before_filter :authenticate_user!
 
    def index
+   	@boat_blogs = BoatBlog.where(:user_id => current_user.id)
+   	 	#@boat_blog = current_user.boat_blogs
    		#@user = User.find(params[:id])
-   		@boat_blog = current_user.Boat_blog.find(params[:id])
+   		#@boat_blog = current_user.Boat_blog.find(params[:id])
    		#@boat_blog =Boat_blog.all
   		#@boat_blog = current_user.boat_blogs.find(params[:user_id])
   	end
