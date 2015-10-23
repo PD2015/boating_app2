@@ -1,8 +1,11 @@
-<h1>All of My Boat Blog Posts</h1>
 
+<div class="container">
+	<div class="jumbotron">
+	<h1>All of My Boat Blog Posts</h1>
+	<%= link_to "Create a new blog post", new_user_boat_blog_path(current_user), class: "btn btn-success btn-lg"%>
+	<%= link_to "Return to users page", user_path(current_user), class: "btn btn-warning btn-lg" %>
 
-<%= link_to "Create a new blog post", new_user_boat_blog_path(current_user) %><br/>
-<%= link_to "Return to users page", user_path(current_user) %>
+	</div>
 
 	<%-# commented : checking if @posts is empty -%>
 <% if @boat_blogs.empty? %> 
@@ -29,5 +32,6 @@
   <% end %>
 <% end %>
 
+</div>
 
  
