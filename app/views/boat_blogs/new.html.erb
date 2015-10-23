@@ -1,0 +1,13 @@
+<h1>BoatBlogs#new</h1>
+<p>Find me in app/views/boat_blogs/new.html.erb</p>
+
+<%= form_for(:boat_blog, :url => {:action => :create}) do |f| %>
+
+<%= f.label :location %>
+<%= f.text_field :location %>
+
+<%= f.submit %>
+
+<%end%>
+
+

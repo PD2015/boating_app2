@@ -1,0 +1,13 @@
+<h1>BoatBlogs#index</h1>
+<p>Find me in app/views/boat_blogs/index.html.erb</p>
+
+<%= link_to "Create a new blog post", new_user_boat_blog_path(current_user) %>
+
+<% if @user.boat_blogs.each do |b|%>
+						<tr>
+							<td><%= b.make %></td>
+							<td><%= b.name %></td>
+							<td><%= b.manufacturing_no %></td>
+						</tr>
+						<%end%>
+					<%end%>	

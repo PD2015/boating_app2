@@ -10,7 +10,8 @@ class BoatsController < ApplicationController
 	end
   
 	def create
-		@boat = current_user.boats.build(boat_params)
+		@user = User.find(params[:user_id])
+		@boat = @user.boats.create(boat_params)
     if @boat.save
       flash[:success] = "New boat added!"
       redirect_to user_path(current_user)

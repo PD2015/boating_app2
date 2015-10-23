@@ -12,11 +12,23 @@
     Found someone else's kit? Search <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
-    <li><a><%= link_to "Search for a Boat", boats_path %></a></li>
-    <li><a><%= link_to "Search for a Bike", bikes_path %></a></li>
     <li><a><%= link_to "Search for a Boat with new search", new_search_path %></a></li> <!-- Adjust route -->
     <li role="separator" class="divider"></li>
     <li><a href="#">Log a found item</a></li> <!-- add link? -->
+  </ul>
+</div>
+
+
+<!-- To My Blog/s Button-->
+<div class="btn-group btn-group-lg">
+  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    My Blog/s <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a><%= link_to "Add new boat blog post", new_user_boat_blog_path(current_user) %></a></li>
+    <li><a></a></li><!-- Adjust route -->
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Create new Blog/Log</a></li> <!-- add link? -->
   </ul>
 </div>
 
@@ -25,13 +37,13 @@
 <!-- New kit buttons toolbar -->
 <div class="btn-group btn-group-justified" role="group" aria-label="...">
 	<div class="btn-group" role="group">
-	  <button type="button" class="btn btn-info"><%= link_to "Add New Boat", new_boat_path %></button>
+	  <button type="button" class="btn btn-info"><%= link_to "Add New Boat", new_user_boat_path(current_user) %></button>
 	</div>
   <div class="btn-group" role="group">
-	  <button type="button" class="btn btn-success"><%= link_to "Add New Bike", new_bike_path %></button>
+	  <button type="button" class="btn btn-success"><%= link_to "Add New Bike", new_user_bike_path(current_user) %></button>
 	</div>
   <div class="btn-group" role="group">
-	  <button type="button" class="btn btn-warn"><%= link_to "Add New Board", new_boat_path %></button>
+	  <button type="button" class="btn btn-warn"><%= link_to "Add New Board", new_user_boat_path(current_user) %></button>
 	</div>
 </div>
 <!-- End New kit buttons toolbar -->

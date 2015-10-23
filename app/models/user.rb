@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
     has_many :boats
     has_many :bikes
+    has_many :boat_blogs
 end

@@ -1,18 +1,15 @@
 Rails.application.routes.draw do
-  
-  # get 'searches/new'
 
-  # get 'searches/create'
-
-  # get 'searches/show'
-
-  devise_for :users, controllers: { registrations: "registrations" }
-  resources :boats, only: [:index, :new, :create, :destroy] #update?
-  resources :bikes, only: [:index, :new, :create, :destroy] #update?
-  resources :searches
+  devise_for :users, :path_prefix => "my", controllers: { registrations: "registrations" }
+  resources :users do
+    resources :boats, only: [:index, :new, :create, :destroy] #update?
+    resources :bikes, only: [:index, :new, :create, :destroy] #update?
+    resources :boat_blogs
+  end
   root 'static_pages#home'
+  resources :searches
   #get "user" => "users#show"
-  match '/users/:id', :to => 'users#show',    :as => :user,  via: [:get, :post]
+  #match '/users/:id', :to => 'users#show',    :as => :user,  via: [:get, :post]
   
 
 
