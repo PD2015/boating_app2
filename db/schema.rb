@@ -46,15 +46,6 @@ ActiveRecord::Schema.define(version: 20151023141320) do
 
   add_index "boats", ["user_id"], name: "index_boats_on_user_id"
 
-  create_table "my_boat_blogs", force: :cascade do |t|
-    t.string   "location"
-    t.text     "comment"
-    t.date     "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "boat_id"
-  end
-
   create_table "searches", force: :cascade do |t|
     t.string   "make"
     t.string   "manufacturing_no"

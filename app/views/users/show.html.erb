@@ -28,7 +28,7 @@
     <li><a><%= link_to "Add new boat blog post", new_user_boat_blog_path(current_user) %></a></li>
     <li><a></a></li><!-- Adjust route -->
     <li role="separator" class="divider"></li>
-    <li><a href="#">Create new Blog/Log</a></li> <!-- add link? -->
+    <li><a><%= link_to "View My Boat Blog", user_boat_blogs_path(current_user) %></a></li>
   </ul>
 </div>
 
