@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
     has_many :boats
     has_many :bikes
     has_many :boat_blogs
+
+    has_one :logbook 
+
 end

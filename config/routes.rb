@@ -3,10 +3,12 @@ Rails.application.routes.draw do
   devise_for :users, :path_prefix => "my", controllers: { registrations: "registrations" }
   
   shallow do
-    resources :users do
+    resources :users do #only?
       resources :boats, only: [:index, :new, :create, :destroy] #update?
       resources :bikes, only: [:index, :new, :create, :destroy] #update?
-      resources :boat_blogs
+      resources :logbooks do #only?
+        resources :posts
+      end
     end
   end
   root 'static_pages#home'

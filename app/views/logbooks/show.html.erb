@@ -1,0 +1,19 @@
+Logbook show
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>All of My Posts</h1>
+
+    <%= link_to "Create a new post", new_logbook_post_path(@logbook), class: "btn btn-info btn-lg" %>
+    <%= link_to "Return to users page", user_path(current_user), class: "btn btn-success btn-lg" %>
+   </div>
+
+      <% @logbook.posts.each do |p| %> 
+	       <h3>Date: <%= p.date %></h3>
+	       <h3>Location: <%= p.location %></h3>
+	       <h3>Post: <%= p.post %></h3>
+	       <hr>
+       <%end%>  
+	  
+
+</div>
