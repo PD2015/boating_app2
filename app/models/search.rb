@@ -7,3 +7,5 @@ class Search < ActiveRecord::Base
 		return boats
 	end
 end
+
+#need to change search method so will only find if exactly correct not like.

@@ -15,6 +15,10 @@
 
 <h2>Contact the Owner </h2>
  <p>Owner details: </p>
+ <!-- Only visible if boolean true in user attributes for visible -->
+ <p>User Email</p>
+<!-- Only visible if logged in with emergency service log in. -->
+ <p>Phone No.</p>
 
 <%= link_to "Perform a new boat search", new_search_path %><br />
 <%= link_to "return to my users page", user_path(current_user)%>

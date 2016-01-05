@@ -1,4 +1,10 @@
 class SearchesController < ApplicationController
+  #currently set up for searching Boats.
+  
+  def show
+    @search = Search.find(params[:id])
+  end
+
   def new
   	@search = Search.new
   	@make = Boat.uniq.pluck(:make)
@@ -9,9 +15,7 @@ class SearchesController < ApplicationController
   	redirect_to @search
   end
 
-  def show
-  	@search = Search.find(params[:id])
-  end
+  
 
 
   	private

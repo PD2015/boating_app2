@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   end
   root 'static_pages#home'
   resources :searches
+
+  post "/boat_search" =>'boats#boat_search', as: :boat_search
   #get "user" => "users#show"
   #match '/users/:id', :to => 'users#show',    :as => :user,  via: [:get, :post]
   
