@@ -14,3 +14,156 @@
  *= require_tree .
  *= require_self
  */
+
+/*
+=========================
+fonts
+========================
+*/
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Sans|Source+Code+Pro|Permanent+Marker|Roboto+Mono|Special+Elite);
+
+
+/*
+=========================
+Body
+========================
+*/
+body,
+html {
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #4A6E88;
+  font-family: "Special Elite", sans-serif;
+}
+
+.container {
+  max-width: 940px;
+}
+.debug {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+.debug_dump {
+  margin: 0;
+}
+/*
+=========================
+Home page
+========================
+*/
+
+
+    /*
+    =========================
+    header
+    ========================
+    */
+
+    .header {
+      text-align: center;
+      color: #fff;
+      height: 800px;
+      background-image: url(https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/11337192_1224637400879998_814943701_n.jpg?ig_cache_key=MTEwMDUzNTkyNDY0MDcyMjk4Nw%3D%3D.2);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      text-shadow: 0 2px 3px rgba(0,0,0,.5)
+    }
+
+    .header h1 {
+      margin-top: 50px;
+      font-size: 65px; 
+    }
+
+    .btn {
+      border: 2px solid #fff;
+      color: #fff;
+      margin-right: 10px;
+      box-shadow:0px 2px 3px rgba(0,0,0,.5);
+    }
+
+    .btn:hover {
+      background-color: rgba(0,0,0,.5);
+      color: #fff;
+    }
+
+
+/*orginal*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/12748378_735701729899326_9018041_n.jpg?ig_cache_key=MTE4NzA0OTAwNDEwNjc4OTMzMQ%3D%3D.2*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/11337192_1224637400879998_814943701_n.jpg?ig_cache_key=MTEwMDUzNTkyNDY0MDcyMjk4Nw%3D%3D.2*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/11337192_1224637400879998_814943701_n.jpg?ig_cache_key=MTEwMDUzNTkyNDY0MDcyMjk4Nw%3D%3D.2*/
+/*rachael and orchy looking out over the islands*/
+
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/12107470_873050692808843_457850150_n.jpg?ig_cache_key=MTA5MTE3MjM1MDMwNjgyNDc3MQ%3D%3D.2*/
+/*rachael top of mountains looking down*/
+
+/*rach in canadian on loch*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/11374421_1468397336823626_1233089978_n.jpg?ig_cache_key=MTA3ODA5NjQ1NzY5OTE3NjY0NA%3D%3D.2*/
+
+
+/*kayaker in hole popping*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/11373792_392111037662631_477707620_n.jpg?ig_cache_key=MTAyODA3NDE1NDkzNjc3NTE4NQ%3D%3D.2*/
+
+/*biker carrying bike over rocky beach*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/11417377_1643865802551844_703557916_n.jpg?ig_cache_key=MTAyOTc2MjY4NDkzOTQxNjUzMw%3D%3D.2*/
+
+
+/*cold swimming*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10919651_1616358518584182_526814781_n.jpg?ig_cache_key=OTAyMDA4MTE3MDQ5NzAwOTU0.2*/
+
+
+/*mountiains and prayer flags*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/11191035_686622594814403_380797073_n.jpg?ig_cache_key=OTczNzg3Mzc4MDgwODIxNDg3.2*/
+
+/*dave skiing*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/12357645_1010510955638885_1357862690_n.jpg?ig_cache_key=MTE2NjYxNDk4MTE2MTI2NzI4Nw%3D%3D.2*/
+
+/*sam and wood smoke*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10611146_1550734011807958_1491941205_n.jpg?ig_cache_key=ODI2NjgwMTUxNzA1Mzk5Mzkx.2*/
+
+/*sam, sand, fire, boat and sunset on island*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10693798_1485283505081235_532624875_n.jpg?ig_cache_key=ODIyMjcyNDA4NDY2NzY0MTk0.2*/
+
+/*dave diving*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/1169833_288380188035964_445844105_n.jpg?ig_cache_key=ODIwOTAwMTMxNDEwMDMxMzEy.2*/
+
+/*paddler on mountain with paddle siloutte*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/926873_1461680914105769_1664412583_n.jpg?ig_cache_key=ODA3MjA5NzkyMjc0OTY5MjU1.2*/
+
+/*rach water in face paddling*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10543882_777008138987293_838733477_n.jpg?ig_cache_key=NzY5NTYyOTExNjY3NjYzMTg4.2*/
+
+/*dee side burns*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10570012_267614063429871_2013342039_n.jpg?ig_cache_key=NzcyMzU5MjA4OTYzNDIwNzM5.2*/
+
+/*ben at bottom of Norwy waterfallw with boat*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10570226_1436963966592649_1707069685_n.jpg?ig_cache_key=NzgxNzI5MTAyMTE2OTU4NjAw.2*/
+
+/*2 bikers whistler*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10448966_257547834447209_98717293_n.jpg?ig_cache_key=NzU0MDExNzA5MjE1MzU1ODMx.2*/
+
+/*single biker jumping whislter*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10471843_530275670433696_1484879695_n.jpg?ig_cache_key=NzYwNjgxNTI3MzY0NTYzMjAy.2*/
+
+/*rach at sunrise in woodland*/
+
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10004086_300593630091151_1816018029_n.jpg?ig_cache_key=Njg3NjM3ODg3ODIyNjA3MDY1.2*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
