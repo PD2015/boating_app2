@@ -37,6 +37,11 @@ html {
   font-family: "Special Elite", sans-serif;
 }
 
+h1 {
+  margin-top: 50px;
+  font-size: 65px;
+}
+
 .container {
   max-width: 940px;
 }
@@ -65,30 +70,78 @@ Home page
     .header {
       text-align: center;
       color: #fff;
+      text-shadow: 0 2px 3px rgba(0,0,0,.5)
+    }
+
+    .home-bkgd {
       height: 800px;
       background-image: url(https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/11337192_1224637400879998_814943701_n.jpg?ig_cache_key=MTEwMDUzNTkyNDY0MDcyMjk4Nw%3D%3D.2);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      text-shadow: 0 2px 3px rgba(0,0,0,.5)
     }
 
-    .header h1 {
-      margin-top: 50px;
-      font-size: 65px; 
-    }
 
-    .btn {
+    .btn-basew {
       border: 2px solid #fff;
       color: #fff;
       margin-right: 10px;
       box-shadow:0px 2px 3px rgba(0,0,0,.5);
     }
 
-    .btn:hover {
+    .btn-basew:hover {
       background-color: rgba(0,0,0,.5);
       color: #fff;
     }
+/*
+=========================
+Log page
+========================
+*/
+.log-background {
+  background-image: url(https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10643861_1525377454362321_1088835696_n.jpg?ig_cache_key=Nzk3MDA5NjczNDUzODQzMTQz.2); 
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.log-background .btn-basew {
+  background-color: rgba(0,0,0,.5);
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.odd {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10%;
+  color: #000;
+}
+
+.even {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10%;
+}
+
+.log-entry .title {
+  padding-top: 60px;
+  font-size: 40px;
+}
+
+.log-entry .post {
+  padding-bottom: 60px;
+}
+
+/*
+=========================
+User show page
+========================
+*/
+.user-bkgd {
+  background-image: url(https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/10666134_334550486723997_40536108_n.jpg?ig_cache_key=ODEwNjkwNDE5MTkyMjQ3MDQ2.2); 
+  background-size: cover;
+}
 
 
 /*orginal*/
@@ -155,7 +208,10 @@ Home page
 
 
 
+/*BACKGROUND*/
 
+/*FISHING BOAT ON OPEN SEA*/
+/*https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/12501898_900323603415271_594402095_n.jpg?ig_cache_key=MTE3MTY0NzMyMjMwMDYyNTg0OA%3D%3D.2*/
 
 
 

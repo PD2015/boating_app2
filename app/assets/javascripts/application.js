@@ -16,7 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
-
+// NEED TO MAKE SURE ALL IMAGES NOT REQUIRED TO LOAD BEFORE PAGE LOAD
 var imgSrcs = ["https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/11337192_1224637400879998_814943701_n.jpg?ig_cache_key=MTEwMDUzNTkyNDY0MDcyMjk4Nw%3D%3D.2",
                 "https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/1169833_288380188035964_445844105_n.jpg?ig_cache_key=ODIwOTAwMTMxNDEwMDMxMzEy.2",
                 "https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e15/11191035_686622594814403_380797073_n.jpg?ig_cache_key=OTczNzg3Mzc4MDgwODIxNDg3.2",
@@ -27,5 +27,5 @@ var imgSrcs = ["https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/1133719
               "https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/12748378_735701729899326_9018041_n.jpg?ig_cache_key=MTE4NzA0OTAwNDEwNjc4OTMzMQ%3D%3D.2", 
               "https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/11374421_1468397336823626_1233089978_n.jpg?ig_cache_key=MTA3ODA5NjQ1NzY5OTE3NjY0NA%3D%3D.2"];
 setInterval(function() {
-    $(".header").css("background-image", "url(" + imgSrcs[imgSrcs.push(imgSrcs.shift())-1] + ") ");
+    $(".home-bkgd").css("background-image", "url(" + imgSrcs[imgSrcs.push(imgSrcs.shift())-1] + ") ");
 }, 3000);

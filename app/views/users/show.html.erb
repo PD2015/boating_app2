@@ -1,26 +1,32 @@
-<div class="container">
-	<div class="jumbotron">
+<main class="user-bkgd">
 
-		<h1><%= current_user.name + "'s" %>  Dashboard</h1>
+ 
+  <header class="header">
+    <div class="container">
+      <h1><%= current_user.name.capitalize + "'s" %>  Dashboard.</h1>
+    </div>
+  </header>
 
-		<%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-danger btn-lg") %> 
+  <nav class="nav">
+    <div class="container">
 
-		<!-- Single SEARCH button -->
-		<div class="btn-group btn-group-lg">
-		  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    Found someone else's kit? Search <span class="caret"></span>
-		  </button>
-		  <ul class="dropdown-menu">
-		    <li><a><%= link_to "Search for a Boat with new search", new_search_path %></a></li> <!-- Adjust route -->
-		    <li role="separator" class="divider"></li>
-		    <li><a href="#">Log a found item</a></li> <!-- add link? -->
-		  </ul>
-		</div>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-basew") %> 
 
+    <!-- Single SEARCH button -->
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-basew dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Found someone else's kit? Search <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a><%= link_to "Search for a Boat with new search", new_search_path %></a></li> <!-- Adjust route -->
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Log a found item</a></li> <!-- add link? -->
+      </ul>
+    </div>
 
 		<!-- To My Blog/s Button-->
 		<div class="btn-group btn-group-lg">
-		  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  <button type="button" class="btn btn-basew dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    My Blog/s <span class="caret"></span>
 		  </button>
 		  <ul class="dropdown-menu">
@@ -31,6 +37,18 @@
 		  </ul>
 		</div>
 
+<!-- Add new kit button -->
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-basew dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Add Kit. <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a><%= link_to "Add New Boat", new_user_boat_path(current_user) %></a></li>
+        <li><a><%= link_to "Add New Bike", new_user_bike_path(current_user) %></a></li>
+        <li><a><%= link_to "Add New Board", new_user_boat_path(current_user) %></a></li>
+      </ul>
+    </div>
+
 		<!-- Search box starts-->
 		<%= form_tag(boat_search_path) do %>
 			 Boat Search
@@ -38,23 +56,11 @@
 			   <%= submit_tag "enter" %>
 			<% end %>
 		<!-- Search box ends-->
+    </div>
+	</nav>
+  <!-- End of Nav -->
 
-	</div>
-	<!-- End of Jumbo -->
 	
-<!-- New kit buttons toolbar -->
-<div class="btn-group btn-group-justified" role="group" aria-label="...">
-	<div class="btn-group" role="group">
-	  <button type="button" class="btn btn-info"><%= link_to "Add New Boat", new_user_boat_path(current_user) %></button>
-	</div>
-  <div class="btn-group" role="group">
-	  <button type="button" class="btn btn-success"><%= link_to "Add New Bike", new_user_bike_path(current_user) %></button>
-	</div>
-  <div class="btn-group" role="group">
-	  <button type="button" class="btn btn-warn"><%= link_to "Add New Board", new_user_boat_path(current_user) %></button>
-	</div>
-</div>
-<!-- End New kit buttons toolbar -->
 
 <div class="container">
 	<div class="col-md-3">
@@ -119,4 +125,5 @@
 
 </div>
 
-</div>
+
+</main>
