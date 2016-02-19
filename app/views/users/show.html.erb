@@ -1,5 +1,6 @@
 <main class="user-bkgd">
 
+<%= render :partial => "layouts/nav.html.erb" %>
  
   <header class="header">
     <div class="container">
@@ -7,10 +8,10 @@
     </div>
   </header>
 
-  <nav class="nav">
+  <nav class="bob">
     <div class="container">
 
-      <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-basew") %> 
+
 
     <!-- Single SEARCH button -->
     <div class="btn-group btn-group-lg">
@@ -49,13 +50,7 @@
       </ul>
     </div>
 
-		<!-- Search box starts-->
-		<%= form_tag(boat_search_path) do %>
-			 Boat Search
-			   <%= search_field_tag(:manufacturing_no) %>
-			   <%= submit_tag "enter" %>
-			<% end %>
-		<!-- Search box ends-->
+	
     </div>
 	</nav>
   <!-- End of Nav -->

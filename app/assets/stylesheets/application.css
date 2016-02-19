@@ -54,6 +54,76 @@ h1 {
 .debug_dump {
   margin: 0;
 }
+
+/*
+=========================
+Nav
+========================
+*/
+
+.nav {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+/*.nav .container {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}*/
+
+.nav ul {
+  
+  margin: 20px 10px;
+  padding: 0;
+  display: inline-block;
+
+}
+
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 10px;
+  
+}
+.nav li:hover {
+  background-color: rgba(0,0,0,.5);
+  border-radius: 10%;
+}
+
+.nav a {
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0,0,0,.5);
+  text-decoration: none;
+}
+ 
+
+.search-form input {
+        background: transparent; 
+        border: 0px; 
+        border-bottom: 1px solid #fff; 
+        color: #fff; 
+        height: 30px; 
+        width: 80px; 
+      } 
+
+      .search-form input:hover, 
+      .search-form input:focus {
+        border-bottom: 1px solid #1a77ff; 
+        outline: 0px; 
+      } 
+
+      .search-btn {
+        background: transparent; 
+        border: 0px; 
+        border-bottom: 1px solid #1a77ff; 
+        color: #fff; 
+        height: 30px; 
+        margin: 0 0 0 10px; 
+        padding: 0 10px; 
+      } 
+
 /*
 =========================
 Home page

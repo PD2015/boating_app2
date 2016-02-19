@@ -1,0 +1,23 @@
+<nav class="nav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>My Adventure Log.</h2>
+        </div>
+        <div class="col-md-8">
+          <ul class="pull-right">
+            <li><a>Logbook</a></li>
+            <li><a>Add Kit</a></li>
+            <li><a><%= link_to('Log out', destroy_user_session_path, :method => :delete) %></a></li>
+            
+            <li class="search-form"><%= form_tag(boat_search_path) do %>
+                  <%= search_field_tag(:manufacturing_no) %>
+                  <%= submit_tag "search", class: "search-btn" %>
+            <% end %></li> 
+             
+          </ul>
+        </div>
+      </div>
+
+    </div>
+</nav>  
